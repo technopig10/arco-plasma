@@ -22,7 +22,7 @@ sudo pacman -S --noconfirm --needed bluez
 sudo pacman -S --noconfirm --needed bluez-libs
 sudo pacman -S --noconfirm --needed bluez-utils
 sudo pacman -S --noconfirm --needed bluez-firmware
-sudo pacman -S --noconfirm --needed blueberry
+sudo pacman -S --noconfirm --needed bluedevil
 
 sudo systemctl enable bluetooth.service
 sudo systemctl start bluetooth.service
