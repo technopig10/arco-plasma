@@ -21,14 +21,14 @@ echo "and run the alias - mirror in the terminal"
 echo "#################################################"
 
 echo "Removing xcursor-breeze to avoid conflict with breeze"
-sudo pacman -R xcursor-breeze --noconfirm
+#sudo pacman -R xcursor-breeze --noconfirm
 
 sudo pacman -Syyu --noconfirm
 #installing displaymanager or login manager
 sudo pacman -S --noconfirm --needed sddm
 sudo pacman -S --noconfirm --needed sddm-kcm
 #sudo pacman -S --noconfirm --needed arcolinux-wallpapers-git
-sudo pacman -S --noconfirm --needed dolphin konsole
+sudo pacman -S --noconfirm --needed dolphin konsole kate
 #installing desktop environment
 sudo pacman -S plasma --noconfirm --needed
 #enabling displaymanager or login manager
