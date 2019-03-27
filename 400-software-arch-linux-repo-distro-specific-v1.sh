@@ -20,7 +20,7 @@ set -e
 
 echo "DESKTOP SPECIFIC APPLICATIONS"
 
-sudo pacman -S --noconfirm --needed kde-applications-meta
+#sudo pacman -S --noconfirm --needed kde-applications-meta
 
 echo "Installing category Accessories"
 
