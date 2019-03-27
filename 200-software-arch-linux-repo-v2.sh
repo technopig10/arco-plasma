@@ -65,6 +65,7 @@ sudo pacman -S --noconfirm --needed firefox
 #sudo pacman -S --noconfirm --needed hexchat
 sudo pacman -S --noconfirm --needed qbittorrent
 sudo pacman -S --noconfirm --needed falkon
+sudo pacman -S --noconfirm --needed gvfs-smb
 
 echo "Installing category Multimedia"
 
