@@ -46,19 +46,22 @@ echo "Installing category Graphics"
 echo "Installing category Internet"
 
 # sh AUR/install-vivaldi-and-ffmeg-codecs-v*.sh
-
+sh AUR/install-qt5-webengine-widevine-v*.sh
+sh AUR/install-mailspring-v*.sh
 
 echo "Installing category Multimedia"
 
 # sh AUR/install-gradio-v*.sh
 # sh AUR/install-peek-v*.sh
 # sh AUR/install-radiotray-v*.sh
-
+sh AUR/install-youtube-dl-gui-git-v*.sh
 
 echo "Installing category Office"
 
 
 echo "Installing category Other"
+
+sh AUR/install-curseradio-git -v*.sh
 
 
 echo "Installing category System"
@@ -75,7 +78,7 @@ sh AUR/install-pamac-aur-v*.sh
 #sh AUR/install-sardi-extra-icons-v*.sh
 #sh AUR/install-screenkey-v*.sh
 #sh AUR/install-surfn-icons-git-v*.sh
-#sh AUR/install-ttf-font-awesome-v*.sh
+sh AUR/install-nerd-fonts-complete-v*.sh
 #sh AUR/install-ttf-mac-fonts-v*.sh
 sh AUR/install-virtualbox-for-linux-v*.sh
 #sh AUR/install-xcursor-breeze-v*.sh
