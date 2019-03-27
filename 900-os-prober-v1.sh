@@ -19,7 +19,7 @@ set -e
 
 echo "Run this if you see an error in your bootup screen or dmesg about microcode"
 
-sudo pacman -S osprober --noconfirm
+sudo pacman -S os-prober --noconfirm
 sudo grub-mkconfig -o /boot/grub/grub.cfg
 
 
