@@ -61,7 +61,7 @@ echo "Installing category Office"
 
 echo "Installing category Other"
 
-sh AUR/install-curseradio-git -v*.sh
+sh AUR/install-curseradio-git-v*.sh
 
 
 echo "Installing category System"
