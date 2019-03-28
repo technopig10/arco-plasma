@@ -17,7 +17,7 @@ set -e
 
 echo "Network Discovery"
 
-sudo pacman -S ---noconfirm --needed networkmanager plasma-nm
+sudo pacman -S --noconfirm --needed networkmanager plasma-nm
 sudo pacman -S --noconfirm --needed avahi
 sudo systemctl enable avahi-daemon.service
 sudo systemctl start avahi-daemon.service
