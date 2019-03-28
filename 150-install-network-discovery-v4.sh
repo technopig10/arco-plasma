@@ -17,6 +17,7 @@ set -e
 
 echo "Network Discovery"
 
+sudo pacman -S ---noconfirm --needed networkmanager plasma-nm
 sudo pacman -S --noconfirm --needed avahi
 sudo systemctl enable avahi-daemon.service
 sudo systemctl start avahi-daemon.service
@@ -37,6 +38,10 @@ sudo pacman -S --noconfirm --needed gvfs-smb
 sudo sed -i 's/files mymachines myhostname/files mymachines/g' /etc/nsswitch.conf
 #last part
 sudo sed -i 's/\[\!UNAVAIL=return\] dns/\[\!UNAVAIL=return\] mdns dns wins myhostname/g' /etc/nsswitch.conf
+sudo systemctl stop dhcpcd
+sudo systemctl disable dhcpcd
+sudo systemctl enable NetworkManager
+sudo systemctl start NetworkManager
 echo "################################################################"
 echo "####       network discovery  software installed        ########"
 echo "################################################################"
