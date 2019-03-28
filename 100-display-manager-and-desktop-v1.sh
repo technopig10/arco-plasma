@@ -30,7 +30,7 @@ sudo pacman -S --noconfirm --needed sddm-kcm
 #sudo pacman -S --noconfirm --needed arcolinux-wallpapers-git
 sudo pacman -S --noconfirm --needed dolphin konsole kate
 #installing desktop environment
-sudo pacman -S plasma --noconfirm --needed
+sudo pacman -S plasma-desktop --noconfirm --needed
 #enabling displaymanager or login manager
 sudo systemctl enable sddm.service -f
 sudo systemctl set-default graphical.target
