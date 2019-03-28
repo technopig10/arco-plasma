@@ -25,15 +25,18 @@ echo "Removing xcursor-breeze to avoid conflict with breeze"
 
 sudo pacman -Syyu --noconfirm
 #installing displaymanager or login manager
+sudo pacman -S --noconfirm --needed xorg xorg-xinit
+echo "exec startkde" > ~/.xinitrc
 sudo pacman -S --noconfirm --needed sddm
 sudo pacman -S --noconfirm --needed sddm-kcm
-#sudo pacman -S --noconfirm --needed arcolinux-wallpapers-git
 sudo pacman -S --noconfirm --needed dolphin konsole kate
 #installing desktop environment
 sudo pacman -S plasma-desktop --noconfirm --needed
+sudo pacman -S --noconfirm --needed kdeplasma-addons
 #enabling displaymanager or login manager
 sudo systemctl enable sddm.service -f
 sudo systemctl set-default graphical.target
+
 
 
 #Remove anything you do not like from the installed applications
