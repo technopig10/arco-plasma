@@ -20,8 +20,8 @@ set -e
 echo "Installing category Accessories"
 
 sudo pacman -S --noconfirm --needed kfind
-#sudo pacman -S --noconfirm --needed cmatrix
-#sudo pacman -S --noconfirm --needed galculator
+sudo pacman -S --noconfirm --needed kde-gtk-config
+sudo pacman -S --noconfirm --needed breeze-gtk
 #sudo pacman -S --noconfirm --needed gnome-screenshot
 sudo pacman -S --noconfirm --needed plank
 sudo pacman -S --noconfirm --needed redshift
