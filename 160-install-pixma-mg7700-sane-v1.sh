@@ -27,6 +27,7 @@ echo "Install Pixma scaner"
 sh AUR/install-scangearmp2-mg7700-v*.sh
 su
 echo bjnp://192.168.88.250 >> /etc/sane.d/pixma.conf
+exit
 
 echo "################################################################"
 echo "####               Pixma scaner installed               ########"
