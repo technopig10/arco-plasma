@@ -27,7 +27,7 @@ echo "Install Pixma scaner"
 sudo pacman -S --noconfirm --needed sane 
 sudo pacman -S --noconfirm --needed skanlite
 sh AUR/install-scangearmp2-mg7700-v*.sh
-sudo echo bjnp://192.168.88.250 >> /etc/sane.d/pixma.conf
+echo add bjnp://192.168.88.250 to file /etc/sane.d/pixma.conf
 
 echo "################################################################"
 echo "####               Pixma scaner installed               ########"
