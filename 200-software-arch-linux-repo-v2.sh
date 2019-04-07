@@ -130,7 +130,7 @@ sudo pacman -S --noconfirm --needed noto-fonts
 sudo pacman -S --noconfirm --needed sane
 sudo pacman -S --noconfirm --needed screenfetch
 #sudo pacman -S --noconfirm --needed scrot
-sudo pacman -S --noconfirm --needed simple-scan
+sudo pacman -S --noconfirm --needed skanlite
 sudo pacman -S --noconfirm --needed sysstat
 sudo pacman -S --noconfirm --needed kdeplasma-addons
 #sudo pacman -S --noconfirm --needed termite
