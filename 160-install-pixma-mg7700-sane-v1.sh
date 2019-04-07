@@ -22,12 +22,12 @@ set -e
 # and forget it. Nevertheless TLP is highly customizable to fulfill your
 # specific requirements
 
-echo "Install tlp for battery life - laptops"
+echo "Install Pixma scaner"
 
-sudo pacman -S --noconfirm --needed tlp
-sudo systemctl enable tlp.service
-sudo systemctl start tlp-sleep.service
+sh AUR/install-scangearmp2-mg7700-v*.sh
+su
+echo bjnp://192.168.88.250 >> /etc/sane.d/pixma.conf
 
 echo "################################################################"
-echo "####               tlp  software installed              ########"
+echo "####               Pixma scaner installed               ########"
 echo "################################################################"
