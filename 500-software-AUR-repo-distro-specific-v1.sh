@@ -17,7 +17,7 @@ set -e
 
 echo "AUR - DESKTOP SPECIFIC APPLICATIONS "
 
-sh AUR/install-yay-v*.sh
+sh AUR/install-yad-v*.sh
 
 echo "################################################################"
 echo "####       Software from AUR-DS folder installed          ######"
