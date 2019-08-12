@@ -27,6 +27,13 @@ case $numberofcores in
         echo "Changing the compression settings for "$numberofcores" cores."
         sudo sed -i 's/COMPRESSXZ=(xz -c -z -)/COMPRESSXZ=(xz -c -T 16 -z -)/g' /etc/makepkg.conf
         ;;
+    12)
+        echo "You have " $numberofcores" cores."
+        echo "Changing the makeflags for "$numberofcores" cores."
+        sudo sed -i 's/#MAKEFLAGS="-j2"/MAKEFLAGS="-j13"/g' /etc/makepkg.conf
+        echo "Changing the compression settings for "$numberofcores" cores."
+        sudo sed -i 's/COMPRESSXZ=(xz -c -z -)/COMPRESSXZ=(xz -c -T 12 -z -)/g' /etc/makepkg.conf
+        ;;
     8)
         echo "You have " $numberofcores" cores."
         echo "Changing the makeflags for "$numberofcores" cores."
